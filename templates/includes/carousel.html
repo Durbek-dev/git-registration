@@ -1,0 +1,203 @@
+{% load static%}
+<div
+id="header-carousel"
+  class="carousel slide carousel-fade"
+  data-ride="carousel"
+  >
+  <!--/.carousel-indicator -->
+  <ol class="carousel-indicators">
+    <li data-target="#header-carousel" data-slide-to="0" class="active">
+      <span class="small-circle"></span>
+    </li>
+    <li data-target="#header-carousel" data-slide-to="1">
+      <span class="small-circle"></span>
+    </li>
+    <li data-target="#header-carousel" data-slide-to="2">
+      <span class="small-circle"></span>
+    </li>
+  </ol>
+  <!-- /ol-->
+  <!--/.carousel-indicator -->
+  <!--/.carousel-inner -->
+  
+  <div class="carousel-inner">
+    <!-- .item -->
+    <div class="item active">
+      <div class="single-slide-item slide1">
+        <div class="container">
+          <div class="welcome-hero-content">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-txt">
+                    <h4>veb design</h4>
+                    <h2>Cloth Covered Accent Chair</h2>
+                    <p>
+                      Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliqui
+                    </p>
+                    <div class="packages-price">
+                      <p>
+                        $ 199
+                        <del>$ 399</del>
+                      </p>
+                    </div>
+                    <button class="btn-cart welcome-add-cart">
+                      <span class="lnr lnr-plus-circle"></span>
+                      add <span>to</span> cart
+                    </button>
+
+                    <button class="btn-cart welcome-add-cart welcome-more-info">
+                      more info
+                    </button>
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+              <div class="col-sm-5">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-img">
+                    <img
+                      src="{% static 'images/slider/slider1.png' %}"
+                      alt="slider image"
+                    />
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+            </div>
+            <!--/.row-->
+          </div>
+          <!--/.welcome-hero-content-->
+        </div>
+        <!-- /.container-->
+      </div>
+      <!-- /.single-slide-item-->
+    </div>
+    {% for x in view %}
+    <div class="item">
+      <div class="single-slide-item slide1">
+        <div class="container">
+          <div class="welcome-hero-content">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-txt">
+                    <h4>{{ x.first }}</h4>
+                    <h2>{{ x.second }}</h2>
+                    <p>
+                      {{ x.nd }}
+                    </p>
+                    <div class="packages-price">
+                      <p>
+                        $ {{ x.narx }}
+                        <del>$ {{ x.narx2 }}</del>
+                      </p>
+                    </div>
+                    <button class="btn-cart welcome-add-cart">
+                      <span class="lnr lnr-plus-circle"></span>
+                      add <span>to</span> cart
+                    </button>
+
+                    <button class="btn-cart welcome-add-cart welcome-more-info">
+                      more info
+                    </button>
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+              <div class="col-sm-5">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-img">
+                    <img
+                      src="{% static 'images/slider/slider2.png' %}"
+                      alt="slider image"
+                    />
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+            </div>
+            <!--/.row-->
+          </div>
+          <!--/.welcome-hero-content-->
+        </div>
+        <!-- /.container-->
+      </div>
+      <!-- /.single-slide-item-->
+    </div>
+    {% endfor %}
+    {% for x in view %}
+    <div class="item">
+      <div class="single-slide-item slide1">
+        <div class="container">
+          <div class="welcome-hero-content">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-txt">
+                    <h4>{{ x.first }</h4>
+                    <h2>{{ x.second }}</h2>
+                    <p>
+                      {{ x.nd }}
+                    </p>
+                    <div class="packages-price">
+                      <p>
+                        $ {{ x.narx }}
+                        <del>$ {{ x.narx2 }}</del>
+                      </p>
+                    </div>
+                    <button class="btn-cart welcome-add-cart">
+                      <span class="lnr lnr-plus-circle"></span>
+                      add <span>to</span> cart
+                    </button>
+
+                    <button class="btn-cart welcome-add-cart welcome-more-info">
+                      more info
+                    </button>
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+              <div class="col-sm-5">
+                <div class="single-welcome-hero">
+                  <div class="welcome-hero-img">
+                    <img
+                      src="{% static 'images/slider/3.png' %}"
+                      alt="slider image"
+                    />
+                  </div>
+                  <!--/.welcome-hero-txt-->
+                </div>
+                <!--/.single-welcome-hero-->
+              </div>
+              <!--/.col-->
+            </div>
+            <!--/.row-->
+          </div>
+          <!--/.welcome-hero-content-->
+        </div>
+        <!-- /.container-->
+      </div>
+      <!-- /.single-slide-item-->
+    </div>
+    {% endfor %}
+  </div>
+
+  </div>
+  <!-- /.carousel-inner-->
+
+
+
